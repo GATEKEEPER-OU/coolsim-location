@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import EVENTS from './events.js';
 import Utils from '../../Utils/index.js';
 import Actions from '../../Agent/Actions/index.js';
@@ -63,7 +64,8 @@ export default class Events {
         let results = yourEventsList.map((event)=>{
 
             // create a copy
-            let result = Object.assign({},event);
+            let id = uniqid();
+            let result = Object.assign({id,name:`event-${event.label}-${id}`},event);
 
             // calc effects for the agent
             let effectsList = event.effects.filter(e=>e.rate);

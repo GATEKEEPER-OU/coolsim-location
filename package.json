@@ -18,5 +18,7 @@
   },
   "homepage": "https://github.com/DrPollo/Community-Planner-Locations#readme",
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "uniqid": "^5.2.0"
+  }
 }

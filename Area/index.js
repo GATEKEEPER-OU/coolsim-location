@@ -8,7 +8,7 @@
 //          - spawn, rate of number of birth per death
 //          - residents (alternative to initial) list of agents
 
-
+import uniqid from "uniqid";
 import Place from "../Places/index.js";
 
 export class Area{
@@ -20,6 +20,8 @@ export class Area{
         if(!name){
             throw new Error('area name required');
         }
+        this.id = uniqid();
+        this.address = `area-${name}-${this.id}`;
 
         if(population) {
             this.initial = population.initial;

@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import PLACES from "./places.js";
 import Events from "./Events/index.js";
 import Utils from "../../Utils/index.js";
@@ -22,6 +23,10 @@ export default class Place{
         if(!place){
             throw new Error("ERROR: place required!")
         }
+
+        this.id = uniqid();
+        this.name = `${place.label}-${this.id}`;
+        this.address = `place-${this.name}`;
 
         Object.assign(this,place);
 
