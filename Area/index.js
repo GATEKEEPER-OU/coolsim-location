@@ -74,6 +74,9 @@ export class Area{
         return this.population;
     }
 
+    get placesMap(){
+        return this.places;
+    }
 }
 
 
