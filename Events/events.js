@@ -6,7 +6,7 @@
 // ending: rate of ending of the event
 // outcomes: array [ {} ]
 // effects: [ {label // key of the outcome, source // [action,condition] rate // overriding the source rate} ]
-export default EVENTS = [
+const EVENTS = [
     {
         label:'seasonal flu',
         starting:0.008,
@@ -48,3 +48,5 @@ export default EVENTS = [
             ]
         }
 ];
+
+export default EVENTS;
