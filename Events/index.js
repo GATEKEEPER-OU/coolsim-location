@@ -82,7 +82,7 @@ export default class Events {
 
             return result;
         });
-        results.forEach(e=>console.log(e));
+        // results.forEach(e=>console.log(e));
         // console.log('agent events',results);
         return results;
     }
