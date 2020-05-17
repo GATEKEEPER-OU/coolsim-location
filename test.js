@@ -1,4 +1,4 @@
-import {Events} from "../Agent/Events/index.js";
+import Events from "./Events/index.js";
 
 // Locations Module defines area, places
 // and interactions occurring within area's place and outside the area

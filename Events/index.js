@@ -1,18 +1,17 @@
 import uniqid from "uniqid";
-import EVENTS from './events.js';
+import Bootstrap from '../../Bootstrap/index.js';
 import Utils from '../../Utils/index.js';
 import Actions from '../../Agent/Actions/index.js';
 import Conditions from '../../Agent/Conditions/index.js';
 
 const Rate = Utils.rate;
+const EVENTS = Bootstrap.location.EVENTS;
 
 // manager of events
 // each simulation should have one instance
 export default class Events {
 
-    constructor(clock){
-        if(!clock){ throw new Error('clock required'); }
-        this.clock = clock;
+    constructor(){
         this.current = null;
 
         this.EVENTS = EVENTS;
@@ -85,11 +84,6 @@ export default class Events {
         // results.forEach(e=>console.log(e));
         // console.log('agent events',results);
         return results;
-    }
-
-
-    get date(){
-        return this.clock.date;
     }
 
     _sunrise(){
