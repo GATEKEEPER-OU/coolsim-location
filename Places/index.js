@@ -1,7 +1,7 @@
 import uniqid from "uniqid";
 import PLACES from "./places.js";
 import Events from "./Events/index.js";
-import Utils from "../../Utils/index.js";
+import Utils from "../../coolsim-utilities/index.js";
 
 const PostOffice = Utils.messages.postoffice;
 const Clock = Utils.time.ClockTower;

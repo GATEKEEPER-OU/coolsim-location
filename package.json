@@ -1,5 +1,5 @@
 {
-  "name": "Locations",
+  "name": "coolsim-location",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DrPollo/Community-Planner-Locations.git"
+    "url": "git+https://github.com/GATEKEEPER-OU/coolsim-location.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DrPollo/Community-Planner-Locations/issues"
+    "url": "https://github.com/GATEKEEPER-OU/coolsim-location/issues"
   },
-  "homepage": "https://github.com/DrPollo/Community-Planner-Locations#readme",
+  "homepage": "https://github.com/GATEKEEPER-OU/coolsim-location#readme",
   "type": "module",
   "dependencies": {
     "uniqid": "^5.2.0"
