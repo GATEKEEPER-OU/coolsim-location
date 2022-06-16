@@ -1,8 +1,8 @@
 import uniqid from "uniqid";
-import Bootstrap from '../../coolsim-configuration/index.js';
-import Utils from '../../coolsim-utilities/index.js';
-import Actions from '../../coolsim-agentmanager/Actions/index.js';
-import Conditions from '../../coolsim-agentmanager/Conditions/index.js';
+import Bootstrap from '../../configuration/index.js';
+import Utils from '../../utilities/index.js';
+import Actions from '../../agent-manager/Actions/index.js';
+import Conditions from '../../agent-manager/Conditions/index.js';
 
 const Rate = Utils.rate;
 const EVENTS = Bootstrap.location.EVENTS;
